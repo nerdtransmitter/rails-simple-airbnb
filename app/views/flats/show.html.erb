@@ -1,0 +1,58 @@
+<div class="banner" id="map">
+</div>
+<div class="parent d-flex justify-content-center">
+  <div class="container d-flex justify-content-center" id="flat-info">
+    <div class="row">
+      <div class="col-8">
+        <div class="rounded bg-light shadow-sm p-3 mb-3" id="card-title">
+          <h1><%= @flat.name %></h1>
+          <p class="address"><%= @flat.address %></p>
+        </div>
+
+        <div class="rounded bg-light shadow-sm p-3 mb-3" id="card-desc">
+          <h3>A bit more about this flat...</h3>
+          <p class="description"><%= @flat.description %></p>
+        </div>
+
+        <div class="rounded bg-light shadow-sm p-3 mb-3" id="card-details">
+          <h3>Details</h3>
+          <div class="flat-icons d-flex ">
+            <p class=""><i class="fa-solid fa-user-group"></i>  <small><%= @flat.number_of_guests %></small></p>
+            <p class="px-3"><i class="fa-solid fa-euro-sign"></i> <small>  <%= @flat.price_per_night %> </small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="rounded bg-light shadow-sm p-3 mb-3">
+          <h5>Book this place!</h5>
+          <form action="submit">
+            <div class="input-group mb-3">
+              <span class="input-group-text">From:</span>
+              <input type="text" class="form-control" placeholder="06/20/2023">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">To:</span>
+              <input type="text" class="form-control" placeholder="06/20/2023">
+            </div>
+          </form>
+          <%= link_to "Book", flats_path, class: "btn btn-success w-100"%>
+        </div>
+
+        <div class="rounded bg-light shadow-sm p-3 mb-3 justify-content-between align-items-center share-card">
+          <div>
+            Share
+          </div>
+          <div class="share-icons d-flex justify-content-between">
+            <i class="fa-brands fa-square-facebook me-2"></i>
+            <i class="fa-brands fa-square-instagram me-2"></i>
+            <i class="fa-brands fa-square-pinterest me-2"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+#map {
+  background-image: url('https://i.pinimg.com/736x/48/09/80/480980bd6261c894beba408551783001.jpg');
+  background-size: cover;
+  height: 300px;
+  width: auto;
+}
+
+#flat-info {
+  /* flex: 1 0 auto; */
+  position: absolute;
+  top: -60px;
+  justify
+}
+
+.parent {
+  position: relative;
+}
+
+.fa-brands {
+  font-size: 20px;
+}
+
+.share-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  width: 400px !important;
+}

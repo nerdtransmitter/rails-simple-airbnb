@@ -1,0 +1,10 @@
+<div class="form-container container">
+  <%= simple_form_for(flat, html: { class: "form-horizontal" }) do |f| %>
+    <%= f.input :name, input_html: { class: "form-control" }, label_html: { class: "control-label" } %>
+    <%= f.input :description, input_html: { class: "form-control" }, label_html: { class: "control-label" } %>
+    <%= f.input :address, input_html: { class: "form-control" }, label_html: { class: "control-label" } %>
+    <%= f.input :price_per_night, input_html: { class: "form-control" }, label_html: { class: "control-label" } %>
+    <%= f.input :number_of_guests, input_html: { class: "form-control" }, label_html: { class: "control-label" } %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
